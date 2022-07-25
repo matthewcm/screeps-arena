@@ -1,0 +1,42 @@
+default_deploy_mode = "tutorial1"
+
+[build]
+build_mode = "arena"
+
+[ctf]
+destination = "/home/mcm/ScreepsArena"
+prune = true
+branch = "alpha-capture_the_flag"
+  [ctf.build]
+  extra_options = ["--features=arena-capture-the-flag"]
+
+[swamp]
+destination = "/home/mcm/ScreepsArena"
+prune = true
+branch = "alpha-spawn_and_swamp"
+  [swamp.build]
+  extra_options = ["--features=arena-spawn-and-swamp"]
+
+[collect]
+destination = "/home/mcm/ScreepsArena"
+prune = true
+branch = "alpha-collect_and_control"
+  [collect.build]
+  extra_options = ["--features=arena-collect-and-control"]
+
+[tutorial1]
+destination = "/home/mcm/ScreepsArena"
+prune = true
+branch = "tutorial-loop_and_import"
+  [tutorial1.build]
+  extra_options = ["--features=arena-tutorial-loop-and-import"]
+
+
+[tutorial2]
+destination = "/mnt/c/Users/Matthew/ScreepsArena"
+prune = true
+branch = "tutorial-first_attack"
+  [tutorial2.build]
+  extra_options = ["--features=arena-tutorial-first_attack"]
+# for full syntax, see
+# https://github.com/rustyscreeps/cargo-screeps/blob/master/screeps-defaults.toml
